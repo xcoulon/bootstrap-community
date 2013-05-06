@@ -76,22 +76,25 @@
 }
 
 /* -------Main Content (modified for sticky company footer) ------ */
+@height: 70px;
+
 #content {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
 	/* Negative indent company footer by it's height */
-	margin: 0 auto -70px;
+	margin: 0 auto -@height;
 	background-color: white;
 }
 
 #companyfooter-placeholder {
-	height: 70px;
+	height: @height; 
+	margin-top: @height;
 }
 
 /* ------------------ Company Footer ------------------------- */
 #companyfooter {
-	height: 70px;
+	height: @height;
 	background-color: #f3f3f3;
 }
 			
